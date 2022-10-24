@@ -2,9 +2,9 @@
     "homepage": "https://copytranslator.github.io/",
     "description": "Foreign language assisted reading and translation solution",
     "license": "GPL-2.0-only",
-    "version": "10.1.0",
-    "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v10.1.0/copytranslator-10.1.0-win.zip",
-    "hash": "81975b00d06a4c7b521a8d48f7a84d4b23f3801bcd7939e7999a77d0266dfe3d",
+    "version": "10.2.2",
+    "url": "https://github.com/CopyTranslator/CopyTranslator/releases/download/v10.2.2/copytranslator-10.2.2-win.zip",
+    "hash": "adcd40766940010007d98654eafb7f1ec628718d0d5a4e225a2981000ef06e45",
     "shortcuts": [
         [
             "copytranslator.exe",
