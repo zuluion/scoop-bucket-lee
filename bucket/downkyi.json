@@ -1,12 +1,12 @@
 {
-    "version": "1.5.8",
+    "version": "1.5.9",
     "description": "DownKyi is a bilibili video download tool.",
     "homepage": "https://github.com/leiurayer/downkyi/blob/main/README.md",
     "license": "GPL",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/leiurayer/downkyi/releases/download/v1.5.8/DownKyi-1.5.8.zip",
-            "hash": "f0a1cacd9a1815c90de20682a950fe9b04505500259c8cbf931af0ddf42910a9"
+            "url": "https://github.com/leiurayer/downkyi/releases/download/v1.5.9/DownKyi-1.5.9.zip",
+            "hash": "398e9978dd355fb323038a58eb04eb9c5027ef33f3fbe2f47a841749bf546686"
         }
     },
     "shortcuts": [
