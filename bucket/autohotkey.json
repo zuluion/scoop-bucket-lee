@@ -1,10 +1,10 @@
 {
-    "version": "1.1.37.01",
+    "version": "2.0.4",
     "description": "The ultimate automation scripting language for Windows.",
     "homepage": "https://www.autohotkey.com/",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.37.01/AutoHotkey_1.1.37.01_setup.exe#/dl.7z",
-    "hash": "dbf3490648efe876bd9a98d53e4d9110bf5e02a3914c0dd4b2a48db4a09799b5",
+    "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v2.0.4/AutoHotkey_2.0.4_setup.exe#/dl.7z",
+    "hash": "38b5790e1fd1bea17231a3a55e701217ebde42428046e029f609b1d1734c7140",
     "architecture": {
         "64bit": {
             "bin": [
