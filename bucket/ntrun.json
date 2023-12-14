@@ -1,0 +1,23 @@
+{
+    "homepage": "https://www.ntrun.com/",
+    "description": "与 Win+R 运行完美融合的快速启动 | 优秀的本地程序管理工具",
+    "version": "3.1.1",
+    "license": "",
+    "url": "https://github.com/Sealt/nTrun/releases/download/3.1.1/nTrun_V3.1.1.7z",
+    "hash": "19c491f976b303b8c5862b96e6552756560d867b6dfa54481db060396a0f09fd",
+    "extract_dir": "ntrun",
+    "shortcuts": [
+        [
+            "nTrun.exe"
+        ]
+    ],
+    "persist": [
+        "Goto",
+        "Config.ini",
+        "Subject.edb"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Sealt/nTrun/releases/download/$version/nTrun_V$version.7z"
+    }
+}
