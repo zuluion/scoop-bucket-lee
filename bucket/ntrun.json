@@ -5,7 +5,6 @@
     "license": "",
     "url": "https://github.com/Sealt/nTrun/releases/download/3.1.1/nTrun_V3.1.1.7z",
     "hash": "19c491f976b303b8c5862b96e6552756560d867b6dfa54481db060396a0f09fd",
-    "extract_dir": "ntrun",
     "shortcuts": [
         [
             "nTrun.exe"
