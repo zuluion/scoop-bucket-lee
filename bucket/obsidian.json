@@ -1,5 +1,5 @@
 {
-    "version": "1.4.16",
+    "version": "1.5.3",
     "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files.",
     "homepage": "https://obsidian.md",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian.1.4.16.exe#/dl.7z",
-            "hash": "eb60f93f3ce10c2f4d0f8ab45ea0d457a9975f5b2f108691773951ce02d85526",
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/Obsidian.1.5.3.exe#/dl.7z",
+            "hash": "6baf021a476b3731242ddc9b3d5b4a6006bc684d70fcdda1eb9ff6889da82319",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
