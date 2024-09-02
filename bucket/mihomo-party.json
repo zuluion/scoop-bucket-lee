@@ -9,6 +9,9 @@
             "hash": "0ee681e6c6a4775c5a15c8a19b3a309cf4698e450914e465fb26b76c2b4e5f70"
         }
     },
+    "persist": [
+        "data"
+    ],
     "shortcuts": [
         [
             "mihomo-party.exe",
