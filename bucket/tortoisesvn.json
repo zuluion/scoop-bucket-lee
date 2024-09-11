@@ -104,8 +104,19 @@
     ],
     "checkver": {
         "url": "https://tortoisesvn.net/downloads.html",
-        "regex": "/Application/TortoiseSVN-([\\d.]+)-x64-svn-(?<svn>[\\d.]+)\\.msi"
+        "regex": "/Application/TortoiseSVN-(1.14.6.[\\d.]+)-x64-svn-(?<svn>[\\d.]+)\\.msi"
     },
     "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://sourceforge.net/projects/tortoisesvn/files/$matchHead/Application/TortoiseSVN-$version-x64-svn-$matchSvn.msi"
+            },
+            "32bit": {
+                "url": "https://sourceforge.net/projects/tortoisesvn/files/$matchHead/Application/TortoiseSVN-$version-win32-svn-$matchSvn.msi"
+            },
+            "arm64": {
+                "url": "https://sourceforge.net/projects/tortoisesvn/files/$matchHead/Application/TortoiseSVN-$version-ARM64-svn-$matchSvn.msi"
+            }
+        }
     }
 }
