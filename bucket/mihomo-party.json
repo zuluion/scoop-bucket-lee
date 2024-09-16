@@ -1,12 +1,12 @@
 {
-    "version": "1.2.19",
+    "version": "1.2.20",
     "description": "Another Mihomo GUI.",
     "homepage": "https://github.com/pompurin404/mihomo-party",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.19/mihomo-party-windows-1.2.19-x64-portable.7z",
-            "hash": "74d1442fb73ca33cf6fa98b854c4f4527ae3dcc90b84affaa7851dbb1612a8af"
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.20/mihomo-party-windows-1.2.20-x64-portable.7z",
+            "hash": "72e7d20b1cde7d3128fb976021c99c2f81b00a98ecfd5366f3599cd14bf499da"
         }
     },
     "persist": "data",
