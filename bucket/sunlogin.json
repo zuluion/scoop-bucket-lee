@@ -1,5 +1,5 @@
 {
-    "version": "15.6.6.62150",
+    "version": "15.6.8.15544",
     "description": "Sunlogin by Oray",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_15.6.6.62150_x64.exe",
-            "hash": "md5:40d58ce5b804bca01789c04862d4ec1b",
+            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_15.6.8.15544_x64.exe",
+            "hash": "md5:78d3c8f6976d7676b2c19ea3ee7eb2f9",
             "shortcuts": [
                 [
                     "SunloginClient_15.6.6.62150_x64.exe",
@@ -17,8 +17,8 @@
             ]
         },
         "32bit": {
-            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_15.6.6.62150.exe",
-            "hash": "md5:00b5a23479853652d45d00eadac479dd",
+            "url": "https://down.oray.com/sunlogin/windows/SunloginClient_15.6.8.15544.exe",
+            "hash": "md5:915d7fc1acfa5b14ecd131c265317891",
             "shortcuts": [
                 [
                     "SunloginClient_15.6.6.62150.exe",
