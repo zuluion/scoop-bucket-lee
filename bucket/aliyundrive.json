@@ -1,13 +1,13 @@
 {
-    "version": "6.1.0",
+    "version": "6.4.2",
     "description": "The official client for Alibaba's cloud dirve service",
     "homepage": "https://www.aliyundrive.com/",
     "license": {
         "identifier": "EULA",
         "url": "https://www.aliyundrive.com/protocol/service"
     },
-    "url": "https://cdn.aliyundrive.net/downloads/apps/desktop/update/6.1.0/win32/ia32/aDrive-6.1.0.exe#/aDrive-6.1.0.7z",
-    "hash": "sha512:6186b7862e53d66c1d5bae40b47d078d79cb586d2a1a2dfaa2ffbf0b1a56ab6b0cdea53550388b1c75966445e0263f74f1fc54a6ccaf7a2c65d09d33275db118",
+    "url": "https://cdn-gray.aliyundrive.net/downloads/apps/desktop/aDrive-$version.exe",
+    "hash": "sha512:5a4e5c14d6eae44267f404e5760b446fbf7784bc3eb51a0b3bf3d3d9549a6969dea0a2b85326f9d2c36958b87077470ad60eb12f0dfa42436a5fe279ef5250e0",
     "post_install": [
         "@('$PLUGINSDIR', '$TEMP') | ForEach-Object {",
         "    Remove-Item \"$dir\\$_\" -Recurse -Force",
@@ -20,11 +20,10 @@
         ]
     ],
     "checkver": {
-        "script": "return (iwr -useb \"$($(iwr -useb 'https://www.aliyundrive.com/desktop/version/update.json' | ConvertFrom-Json).url)/win32/ia32/latest.yml\")",
-        "re": "version: ([\\d.]+)"
+        "script": "powershell -Command \"$response = Invoke-WebRequest https://www.aliyundrive.com/desktop/version/update.json; $version = ($response.Content | ConvertFrom-Json).url -split '/' | Select-Object -Last 1; return $version\""
     },
     "autoupdate": {
-        "url": "https://cdn.aliyundrive.net/downloads/apps/desktop/update/$version/win32/ia32/aDrive-$version.exe#/aDrive-$version.7z",
+        "url": "https://cdn-gray.aliyundrive.net/downloads/apps/desktop/aDrive-$version.exe",
         "hash": {
             "url": "https://g.alicdn.com/aliyun-drive-fe/aliyun-drive-desktop-version/$version/win32/ia32/latest.yml",
             "mode": "extract",
