@@ -1,12 +1,12 @@
 {
-    "version": "7.20.0",
+    "version": "7.21.0",
     "description": "Powerful and easy to use e-book manager",
     "homepage": "https://calibre-ebook.com",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://download.calibre-ebook.com/7.20.0/calibre-portable-installer-7.20.0.exe",
-            "hash": "575ba5319d068f2a05814384ef4c5554713daa6a243b82646ea6b2df46c49741"
+            "url": "https://download.calibre-ebook.com/7.21.0/calibre-portable-installer-7.21.0.exe",
+            "hash": "0a98cd3a1517c86b6cd7b96c7e308c075940bd1fe8dad1ec9a9d7d60203a25d0"
         }
     },
     "installer": {
