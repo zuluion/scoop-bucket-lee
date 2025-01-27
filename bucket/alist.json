@@ -1,16 +1,16 @@
 {
-    "version": "3.41.0",
+    "version": "3.42.0",
     "description": "A file list program that supports multiple storage, powered by Gin and Solidjs.",
     "homepage": "https://alist.nn.ci",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/alist-org/alist/releases/download/v3.41.0/alist-windows-amd64.zip",
-            "hash": "md5:94e5841ec4514811df872dc481675080"
+            "url": "https://github.com/alist-org/alist/releases/download/v3.42.0/alist-windows-amd64.zip",
+            "hash": "md5:44e6e61ff77b055e390fc1cb165c62d8"
         },
         "32bit": {
-            "url": "https://github.com/alist-org/alist/releases/download/v3.41.0/alist-windows-386.zip",
-            "hash": "md5:5db71e32cd27a4fceae9cfc5c412ddfd"
+            "url": "https://github.com/alist-org/alist/releases/download/v3.42.0/alist-windows-386.zip",
+            "hash": "md5:df2d485662be612261ff856ceddc0346"
         }
     },
     "bin": [
