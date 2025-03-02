@@ -1,18 +1,18 @@
 {
-    "version": "8.12.1_3",
+    "version": "8.12.1_4",
     "description": "Command line tool and library for transferring data with URLs",
     "homepage": "https://curl.haxx.se/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://curl.haxx.se/windows/dl-8.12.1_3/curl-8.12.1_3-win64-mingw.tar.xz",
-            "hash": "9dd91ec2be9a05dfaecc6a34beeed255e4c9f312727df20b164764cc96bf9943",
-            "extract_dir": "curl-8.12.1_3-win64-mingw"
+            "url": "https://curl.haxx.se/windows/dl-8.12.1_4/curl-8.12.1_4-win64-mingw.tar.xz",
+            "hash": "78561acb80e11eeb1c82d9a268adc35cd6341d63bfe40094abe6bf0f9bc77e69",
+            "extract_dir": "curl-8.12.1_4-win64-mingw"
         },
         "32bit": {
-            "url": "https://curl.haxx.se/windows/dl-8.12.1_3/curl-8.12.1_3-win32-mingw.tar.xz",
-            "hash": "8a4fb29bc744b6d1aa8361fc08c22f4fe6f8c9c68bf2af151cd51afd2240d5c9",
-            "extract_dir": "curl-8.12.1_3-win32-mingw"
+            "url": "https://curl.haxx.se/windows/dl-8.12.1_4/curl-8.12.1_4-win32-mingw.tar.xz",
+            "hash": "b198b8bfa8e92db5c17e8d4cb039524f7109be5b8e9066c346a3f63995711430",
+            "extract_dir": "curl-8.12.1_4-win32-mingw"
         }
     },
     "bin": "bin\\curl.exe",
