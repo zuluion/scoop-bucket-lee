@@ -14,9 +14,6 @@
     }
   },
   "bin": "BlueGauge.exe",
-  "persist": [
-    "BlueGauge.toml"
-  ],
   "notes": [
     "Running BlueGauge.exe generates BlueGauge.toml, which is configured to be saved persistently."
   ],
@@ -28,9 +25,6 @@
             "BlueGauge.exe",
             "BlueGauge"
         ]
-  ],
-  "post_install": [
-    "if (!(Test-Path \"$dir\\BlueGauge.toml\")) { New-Item \"$dir\\BlueGauge.toml\" -ItemType File }"
   ],
   "autoupdate": {
     "architecture": {
