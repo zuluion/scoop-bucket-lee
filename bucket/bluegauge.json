@@ -29,6 +29,9 @@
             "BlueGauge"
         ]
   ],
+  "post_install": [
+    "if (!(Test-Path \"$dir\\BlueGauge.toml\")) { New-Item \"$dir\\BlueGauge.toml\" -ItemType File }"
+  ],
   "autoupdate": {
     "architecture": {
       "64bit": {
