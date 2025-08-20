@@ -18,7 +18,7 @@
     "Running BlueGauge.exe generates BlueGauge.toml, which is configured to be saved persistently."
   ],
   "checkver": {
-    "github": "iKineticate/BlueGauge"
+    "github": "https://github.com/iKineticate/BlueGauge"
   },
   "shortcuts": [
         [
