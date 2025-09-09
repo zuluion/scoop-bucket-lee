@@ -2,15 +2,15 @@
     "homepage": "https://ccl.northwestern.edu/netlogo/",
     "description": "turtles, patches, and links for kids, teachers, and scientists",
     "license": "GPL-2.0",
-    "version": "6.4.0",
+    "version": "7.0.0",
     "architecture": {
         "64bit": {
-            "url": "https://ccl.northwestern.edu/netlogo/6.4.0/NetLogo-6.4.0-64.msi",
-            "hash": "b96d88424a80b93ab545bc8bf76a5c01fcc6e438061b06a98b5ce55e344c402c"
+            "url": "https://ccl.northwestern.edu/netlogo/7.0.0/NetLogo-7.0.0-64.msi",
+            "hash": "ae780e3168cf223a2ec7682852f8f3006c813bbfa5679861f11ab91205e7ac1b"
         },
         "32bit": {
-            "url": "https://ccl.northwestern.edu/netlogo/6.4.0/NetLogo-6.4.0-32.msi",
-            "hash": "63b10d0b9ef40a17097fa2f567d6625446fbe5c4e2138137a432fbcd7c705ec6"
+            "url": "https://ccl.northwestern.edu/netlogo/7.0.0/NetLogo-7.0.0-32.msi",
+            "hash": "17c2be71c6ae47a05a81d5bd1c519a78318a3b3a42da1b8c76ff2694abdf1966"
         }
     },
     "bin": [
