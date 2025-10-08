@@ -1,16 +1,16 @@
 {
     "homepage": "https://mirrors.bfsu.edu.cn/julia-releases/",
     "description": "A programming language that is a fresh approach to technical computing.",
-    "version": "1.11.7",
+    "version": "1.12.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirrors.bfsu.edu.cn/julia-releases/bin/winnt/x64/1.11/julia-1.11.7-win64.exe",
-            "hash": "55f260b004c17c1d98226f10ce593c8e79c130fcfc75342ad7cbfcf69d48ebdc"
+            "url": "https://mirrors.bfsu.edu.cn/julia-releases/bin/winnt/x64/1.12/julia-1.12.0-win64.exe",
+            "hash": "1dd9ea0e4b61dfe5bc4d81e37e4cf19acb4f65b09699e3a4c65ba6ac727d7a3f"
         },
         "32bit": {
-            "url": "https://mirrors.bfsu.edu.cn/julia-releases/bin/winnt/x86/1.11/julia-1.11.7-win32.exe",
-            "hash": "e046ed03d408080d81e7a775d43e4d4ef743e3e32993b5ce0d957e270a6a0209"
+            "url": "https://mirrors.bfsu.edu.cn/julia-releases/bin/winnt/x86/1.12/julia-1.12.0-win32.exe",
+            "hash": "4c0371f054a67022a2235b2160b124b4ee620ca419617130e5ae3646501299e9"
         }
     },
     "innosetup": true,
