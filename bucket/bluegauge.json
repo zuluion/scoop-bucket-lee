@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.4/BlueGauge-0.3.4-x86_64.zip",
-            "hash": "bc7a74c5576f97b0e9924b5aa88c9eebcfd6a19275a8d6ac7b0d6944b0475546"
+            "hash": "4cc7939a696c2d4e7ee3951f892b56c104ecf57794825e4556caebed7ccdcb99"
         },
         "arm64": {
             "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.4/BlueGauge-0.3.4-arm64.zip",
