@@ -1,16 +1,16 @@
 {
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "Lightweight tray utility to monitor battery level of Bluetooth LE devices",
     "homepage": "https://github.com/iKineticate/BlueGauge",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.4/BlueGauge-0.3.4-x86_64.zip",
-            "hash": "4cc7939a696c2d4e7ee3951f892b56c104ecf57794825e4556caebed7ccdcb99"
+            "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.5/BlueGauge-0.3.5-x86_64.zip",
+            "hash": "86f87ab6d7ec555d8008fb08d461edb9d03b6fdffac14dfb139db8fe1ead3937"
         },
         "arm64": {
-            "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.4/BlueGauge-0.3.4-arm64.zip",
-            "hash": "fc43bbb86c60f12e5540f58ea9f47cbbb0b65b68c8be93a0b67e3b236dcd32e8"
+            "url": "https://github.com/iKineticate/BlueGauge/releases/download/0.3.5/BlueGauge-0.3.5-arm64.zip",
+            "hash": "15ab9e1064ac5a1294fea65e5e7677caaf5d1cadaef02869f421f4562b6373dc"
         }
     },
     "bin": "BlueGauge.exe",
