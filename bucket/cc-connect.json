@@ -6,11 +6,13 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/chenhg5/cc-connect/releases/download/v1.3.2/cc-connect-v1.3.2-windows-amd64.zip",
-            "hash": "md5:c27f1dfaf09c001bd43963170573a426"
+            "hash": "md5:c27f1dfaf09c001bd43963170573a426",
+            "rename": "cc-connect.exe"
         },
         "arm64": {
             "url": "https://github.com/chenhg5/cc-connect/releases/download/v1.3.2/cc-connect-v1.3.2-windows-arm64.zip",
-            "hash": "md5:62ea6ea756ceef34bdc6e5630f32bfc4"
+            "hash": "md5:62ea6ea756ceef34bdc6e5630f32bfc4",
+            "rename": "cc-connect.exe"
         }
     },
     "bin": "cc-connect.exe",
@@ -20,10 +22,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-amd64.zip"
+                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-amd64.zip",
+                "rename": "cc-connect.exe"
             },
             "arm64": {
-                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-arm64.zip"
+                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-arm64.zip",
+                "rename": "cc-connect.exe"
             }
         }
     }
