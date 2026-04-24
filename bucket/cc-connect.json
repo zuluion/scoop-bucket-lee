@@ -1,0 +1,30 @@
+{
+    "version": "1.3.2",
+    "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work).",
+    "homepage": "https://github.com/chenhg5/cc-connect",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/chenhg5/cc-connect/releases/download/v1.3.2/cc-connect-v1.3.2-windows-amd64.zip",
+            "hash": "md5:c27f1dfaf09c001bd43963170573a426"
+        },
+        "arm64": {
+            "url": "https://github.com/chenhg5/cc-connect/releases/download/v1.3.2/cc-connect-v1.3.2-windows-arm64.zip",
+            "hash": "md5:62ea6ea756ceef34bdc6e5630f32bfc4"
+        }
+    },
+    "bin": "cc-connect.exe",
+    "checkver": {
+        "github": "https://github.com/chenhg5/cc-connect"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/chenhg5/cc-connect/releases/download/$version/cc-connect-$version-windows-arm64.zip"
+            }
+        }
+    }
+}
