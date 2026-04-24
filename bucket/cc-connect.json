@@ -13,7 +13,7 @@
             "hash": "md5:62ea6ea756ceef34bdc6e5630f32bfc4"
         }
     },
-    "post_install": "Get-ChildItem \"$dir\" -Filter '*.exe' | Where-Object { $_.Name -ne 'cc-connect.exe' } | ForEach-Object { Move-Item $_.FullName \"$dir\\cc-connect.exe\" }",
+    "pre_install": "Get-ChildItem \"$dir\" -Filter 'cc-connect*.exe' | Where-Object { $_.Name -ne 'cc-connect.exe' } | ForEach-Object { Move-Item $_.FullName \"$dir\\cc-connect.exe\" }",
     "bin": "cc-connect.exe",
     "checkver": {
         "github": "https://github.com/chenhg5/cc-connect"
