@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-desktop-win-x64.exe#/dl.7z",
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.39/opencode-desktop-win-x64.exe#/dl.7z",
             "hash": "086c475494f3141368a2e690330586e0882dcc86be96e736c1593bf72a305de6"
         },
         "arm64": {
-            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-desktop-win-arm64.exe#/dl.7z",
+            "url": "https://github.com/anomalyco/opencode/releases/download/v1.14.39/opencode-desktop-win-arm64.exe#/dl.7z",
             "hash": "089418ec117eff6664a6fa90ff55c5af495c4cbe7372edf09c06706029fc06c9"
         }
     },
