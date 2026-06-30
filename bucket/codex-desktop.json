@@ -1,0 +1,53 @@
+{
+    "version": "26.623.9142.0",
+    "description": "OpenAI Codex desktop app — AI agentic coding for Windows",
+    "homepage": "https://openai.com/codex/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://openai.com/policies/terms-of-use/"
+    },
+    "notes": [
+        "Codex Desktop 官方仅通过 Microsoft Store 分发，无独立安装包。",
+        "本 manifest 使用社区镜像: https://github.com/Wangnov/codex-app-mirror",
+        "需要已安装 Microsoft Edge WebView2 Runtime。"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/codex-app-26.623.70822/OpenAI.Codex_26.623.9142.0_x64__2p2nqsd0c76g0.Msix",
+            "hash": "sha256:44389719a86dedec96a95cadee870df1a2ae2517fe9293f050b7c71b868e2d86"
+        },
+        "arm64": {
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/codex-app-26.623.70822/OpenAI.Codex_26.623.9142.0_arm64__2p2nqsd0c76g0.Msix",
+            "hash": "sha256:20c9abbf7983197f48d035fa528fbc54e2100d63e364a06ccf912ed5042333cd"
+        }
+    },
+    "shortcuts": [
+        [
+            "app\\Codex.exe",
+            "OpenAI Codex"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Wangnov/codex-app-mirror/releases/latest",
+        "jsonpath": "$.assets[*].name",
+        "regex": "OpenAI\\.Codex_([\\d.]+)_x64__2p2nqsd0c76g0\\.Msix"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_$version_x64__2p2nqsd0c76g0.Msix",
+                "hash": {
+                    "url": "https://api.github.com/repos/Wangnov/codex-app-mirror/releases/latest",
+                    "regex": "_x64__2p2nqsd0c76g0\\.Msix[\\s\\S]*?sha256:([0-9a-f]{64})"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_$version_arm64__2p2nqsd0c76g0.Msix",
+                "hash": {
+                    "url": "https://api.github.com/repos/Wangnov/codex-app-mirror/releases/latest",
+                    "regex": "_arm64__2p2nqsd0c76g0\\.Msix[\\s\\S]*?sha256:([0-9a-f]{64})"
+                }
+            }
+        }
+    }
+}
