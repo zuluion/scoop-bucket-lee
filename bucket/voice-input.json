@@ -1,12 +1,12 @@
 {
-  "version": "2026.07.29.006",
+  "version": "2026.07.29.007",
   "description": "Windows System Tray Voice Input App using PySide6, Multi-Provider ASR and LLM Refinement",
   "homepage": "https://github.com/zuluion/voice-input",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/zuluion/voice-input/releases/download/v2026.07.29.006/VoiceInput.exe",
-      "hash": "0a0dab40517106331db8b5b2d83ffd1f30d2f1e64c2213cb23bdf33ee6659e73"
+      "url": "https://github.com/zuluion/voice-input/releases/download/v2026.07.29.007/VoiceInput.exe",
+      "hash": "15c71374effc7f14f485c4930205b3322ec325a723127b7c48f73ade054d6779"
     }
   },
   "bin": "VoiceInput.exe",
@@ -15,6 +15,9 @@
       "VoiceInput.exe",
       "Voice Input"
     ]
+  ],
+  "pre_install": [
+    "if (!(Test-Path \"$dir\\config.json\")) { Set-Content \"$dir\\config.json\" '{}' }"
   ],
   "persist": "config.json",
   "checkver": {
