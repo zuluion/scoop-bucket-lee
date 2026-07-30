@@ -1,31 +1,33 @@
 {
-    "version": "2026.07.30.011",
-    "description": "Windows System Tray Voice Input App using PySide6, Multi-Provider ASR and LLM Refinement",
-    "homepage": "https://github.com/zuluion/voice-input",
-    "license": "MIT",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/zuluion/voice-input/releases/download/v2026.07.30.011/VoiceInput.exe",
-            "hash": "c556b8df0044f5f5c19567ad2660d845bcdc4e249b3d86467400c41310c145ba"
-        }
-    },
-    "bin": "VoiceInput.exe",
-    "shortcuts": [
-        [
-            "VoiceInput.exe",
-            "Voice Input"
-        ]
-    ],
-    "pre_install": "if (!(Test-Path \"$dir\\config.json\")) { Set-Content \"$dir\\config.json\" '{}' }",
-    "persist": "config.json",
-    "checkver": {
-        "github": "https://github.com/zuluion/voice-input"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/zuluion/voice-input/releases/download/v$version/VoiceInput.exe"
-            }
-        }
+  "version": "2026.07.30.017",
+  "description": "Windows System Tray Voice Input App using PySide6, Multi-Provider ASR and LLM Refinement",
+  "homepage": "https://github.com/zuluion/voice-input",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/zuluion/voice-input/releases/download/v2026.07.30.017/VoiceInput.exe",
+      "hash": "58223d16c7287e7b341bbd9d3ade3853814fc1be3aae50cceda60dfd30f2f035"
     }
+  },
+  "bin": "VoiceInput.exe",
+  "shortcuts": [
+    [
+      "VoiceInput.exe",
+      "Voice Input"
+    ]
+  ],
+  "pre_install": [
+    "if (!(Test-Path \"$dir\\config.json\")) { Set-Content \"$dir\\config.json\" '{}' }"
+  ],
+  "persist": "config.json",
+  "checkver": {
+    "github": "https://github.com/zuluion/voice-input"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/zuluion/voice-input/releases/download/v$version/VoiceInput.exe"
+      }
+    }
+  }
 }
