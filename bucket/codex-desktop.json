@@ -1,5 +1,5 @@
 {
-    "version": "26.820.7780.0",
+    "version": "26.820.9563.0",
     "description": "OpenAI Codex desktop app — AI agentic coding for Windows",
     "homepage": "https://openai.com/codex/",
     "license": {
@@ -13,12 +13,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.7780.0_x64__2p2nqsd0c76g0.Msix#/dl.zip",
-            "hash": "6e6f8af5cfef4ad10e93991c3332eff855540568e42af776ef971cff4ea8210b"
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.9563.0_x64__2p2nqsd0c76g0.Msix#/dl.zip",
+            "hash": "74e3d22737fd1a392e474b0bafec21a2c5253c786fc857c9237ccc88d39e331b"
         },
         "arm64": {
-            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.7780.0_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
-            "hash": "0765c599b07c449f34587e873b8445aad938cbb27cbd42e64810c083877ccbe2"
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.9563.0_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
+            "hash": "4554f74e82ebe8f990b82100cd8d37e201333d1b499249df82aeca46441adc45"
         }
     },
     "shortcuts": [
