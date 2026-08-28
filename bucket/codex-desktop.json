@@ -1,5 +1,5 @@
 {
-    "version": "26.820.9563.0",
+    "version": "26.820.10647.0",
     "description": "OpenAI Codex desktop app — AI agentic coding for Windows",
     "homepage": "https://openai.com/codex/",
     "license": {
@@ -13,12 +13,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.9563.0_x64__2p2nqsd0c76g0.Msix#/dl.zip",
-            "hash": "74e3d22737fd1a392e474b0bafec21a2c5253c786fc857c9237ccc88d39e331b"
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/codex-app-26.820.80927/OpenAI.Codex_26.820.10647.0_x64__2p2nqsd0c76g0.Msix#/dl.zip",
+            "hash": "9cecaada3013571d4f3c7781c19978a5d198b5ee0f86363b2ceb7a9e1d014cbf"
         },
         "arm64": {
-            "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_26.820.9563.0_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
-            "hash": "4554f74e82ebe8f990b82100cd8d37e201333d1b499249df82aeca46441adc45"
+            "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/codex-app-26.820.80927/OpenAI.Codex_26.820.10647.0_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
+            "hash": "45cbd147449bc043beec26aa830435a74a5f1e36f79b05b407b496087915de0f"
         }
     },
     "shortcuts": [
@@ -29,19 +29,19 @@
     ],
     "checkver": {
         "github": "https://github.com/Wangnov/codex-app-mirror",
-        "regex": "OpenAI\\.Codex_([\\d.]+)_x64__2p2nqsd0c76g0\\.Msix"
+        "regex": "releases/download/(?<tag>codex-app-[\\d.]+)/OpenAI\\.Codex_([\\d.]+)_x64__2p2nqsd0c76g0\\.Msix"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_$version_x64__2p2nqsd0c76g0.Msix#/dl.zip",
+                "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/$matchTag/OpenAI.Codex_$version_x64__2p2nqsd0c76g0.Msix#/dl.zip",
                 "hash": {
                     "url": "https://api.github.com/repos/Wangnov/codex-app-mirror/releases/latest",
                     "regex": "_x64__2p2nqsd0c76g0\\.Msix[\\s\\S]*?sha256:([0-9a-f]{64})"
                 }
             },
             "arm64": {
-                "url": "https://github.com/Wangnov/codex-app-mirror/releases/latest/download/OpenAI.Codex_$version_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
+                "url": "https://github.com/Wangnov/codex-app-mirror/releases/download/$matchTag/OpenAI.Codex_$version_arm64__2p2nqsd0c76g0.Msix#/dl.zip",
                 "hash": {
                     "url": "https://api.github.com/repos/Wangnov/codex-app-mirror/releases/latest",
                     "regex": "_arm64__2p2nqsd0c76g0\\.Msix[\\s\\S]*?sha256:([0-9a-f]{64})"
