@@ -1,0 +1,42 @@
+{
+    "version": "6.5.0",
+    "description": "Reverse Engineer Anything - MCP server and CLI for agent-driven reverse engineering",
+    "homepage": "https://rea.tools/",
+    "license": "MIT",
+    "notes": [
+        "Requires Node.js ^22.19 || ^24.11 || >=26 (either suggested nodejs package works).",
+        "",
+        "First-time setup (once per machine) - interactive, multi-agent:",
+        "  rea setup",
+        "  Pick the agents to register (Claude Code, Codex, Cursor, Gemini CLI, ...),",
+        "  review the plan, approve; restart the agents afterwards.",
+        "  Non-interactive: rea setup --client claude_code --client codex --yes",
+        "  Preview only: rea setup --dry-run",
+        "",
+        "After scoop update: skill is version-locked to the server, refresh it:",
+        "  rea setup",
+        "  (or: rea setup --skill-client claude_code --skill-client codex --yes)",
+        "MCP registration points at the scoop shim, so it needs no change on update."
+    ],
+    "suggest": {
+        "nodejs": [
+            "nonportable/nodejs-np",
+            "main/nodejs"
+        ]
+    },
+    "url": "https://github.com/zuluion/scoop-bucket-lee/releases/download/placeholder/v1/empty.zip",
+    "hash": "a4b0243ee61a3413f9bc046e3b28379dbb7bc25cbca344e1269fd58b3f54a7d9",
+    "installer": {
+        "script": "npm install --prefix \"$dir\" rea-agents@$version --omit=dev --no-audit --no-fund"
+    },
+    "bin": "node_modules/.bin/rea.cmd",
+    "checkver": {
+        "url": "https://registry.npmjs.org/rea-agents",
+        "jsonpath": "$.dist-tags.latest"
+    },
+    "autoupdate": {
+        "installer": {
+            "script": "npm install --prefix \"$dir\" rea-agents@$version --omit=dev --no-audit --no-fund"
+        }
+    }
+}
