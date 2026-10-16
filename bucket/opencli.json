@@ -1,0 +1,127 @@
+{
+    "version": "1.8.8",
+    "description": "OpenCLI - LLM-driven unified CLI for delegating web/backend operations to browser and platform agents",
+    "homepage": "https://github.com/JackWener/opencli",
+    "license": "MIT",
+    "notes": [
+        "Requires Node.js >=20.18.1 (either suggested nodejs package works).",
+        "",
+        "Before scoop update / uninstall - stop the local daemon first,",
+        "scoop does not trigger the package's preuninstall shutdown:",
+        "  POST http://127.0.0.1:19825/shutdown  (header X-OpenCLI: 1)",
+        "  or simply: opencli shutdown  (if available) / kill the process on port 19825",
+        "",
+        "Agent skills: the bundled opencli-* skills are synced at install/update to",
+        "  ~/.opencli/skills (canonical copy), ~/.claude/skills and ~/.agents/skills",
+        "  (agent dirs are filled only if already present; covers Claude Code, Codex, OpenCode).",
+        "  After installing another agent later, re-run:  opencli-sync-skills",
+        "  scoop uninstall removes the skill copies and the whole ~/.opencli config.",
+        "",
+        "Shell completion (bash/zsh/fish only, not PowerShell):",
+        "  opencli completion <shell>  — print the script, then load it in your shell rc",
+        "",
+        "User config lives in ~/.opencli (profiles, cache, clis, spotify.env):",
+        "kept on install/update, deleted together on scoop uninstall."
+    ],
+    "suggest": {
+        "nodejs": [
+            "nonportable/nodejs-np",
+            "main/nodejs"
+        ]
+    },
+    "url": "https://github.com/zuluion/scoop-bucket-lee/releases/download/placeholder/v1/empty.zip",
+    "hash": "a4b0243ee61a3413f9bc046e3b28379dbb7bc25cbca344e1269fd58b3f54a7d9",
+    "installer": {
+        "script": [
+            "npm install --prefix \"$dir\" @jackwener/opencli@$version --omit=dev --no-audit --no-fund",
+            "$sync = @'",
+            "param([ValidateSet('install','uninstall')][string]$Mode = 'install')",
+            "$ErrorActionPreference = 'Stop'",
+            "$stage = Join-Path (Join-Path $env:USERPROFILE '.opencli') 'skills'",
+            "$src = Join-Path (Join-Path (Join-Path (Join-Path $PSScriptRoot 'node_modules') '@jackwener') 'opencli') 'skills'",
+            "$bases = @('.claude', '.agents') | ForEach-Object { Join-Path $env:USERPROFILE $_ }",
+            "if ($Mode -eq 'install') {",
+            "    if (!(Test-Path $src)) { throw \"Missing bundled skills: $src\" }",
+            "    New-Item -ItemType Directory -Force -Path $stage | Out-Null",
+            "    Get-ChildItem $stage -Directory -Filter 'opencli-*' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force",
+            "    Copy-Item (Join-Path $src '*') $stage -Recurse -Force",
+            "    Write-Host \"opencli skills: $stage\"",
+            "    foreach ($base in $bases) {",
+            "        if (!(Test-Path $base)) { continue }",
+            "        $target = Join-Path $base 'skills'",
+            "        New-Item -ItemType Directory -Force -Path $target | Out-Null",
+            "        Get-ChildItem $stage -Directory -Filter 'opencli-*' | ForEach-Object {",
+            "            Copy-Item $_.FullName (Join-Path $target $_.Name) -Recurse -Force",
+            "        }",
+            "        Write-Host \"opencli skills: $target\"",
+            "    }",
+            "} else {",
+            "    foreach ($base in $bases) {",
+            "        $target = Join-Path $base 'skills'",
+            "        if (Test-Path $target) {",
+            "            Get-ChildItem $target -Directory -Filter 'opencli-*' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force",
+            "            Write-Host \"removed opencli skills from: $target\"",
+            "        }",
+            "    }",
+            "    $config = Join-Path $env:USERPROFILE '.opencli'",
+            "    if (Test-Path $config) { Remove-Item $config -Recurse -Force; Write-Host \"removed: $config\" }",
+            "}",
+            "'@",
+            "Set-Content -Path (Join-Path $dir 'sync-skills.ps1') -Value $sync -Encoding UTF8",
+            "& (Join-Path $dir 'sync-skills.ps1') -Mode install"
+        ]
+    },
+    "uninstaller": {
+        "script": "& (Join-Path $dir 'sync-skills.ps1') -Mode uninstall"
+    },
+    "bin": [
+        "node_modules/.bin/opencli.cmd",
+        ["sync-skills.ps1", "opencli-sync-skills"]
+    ],
+    "checkver": {
+        "url": "https://registry.npmjs.org/@jackwener/opencli",
+        "jsonpath": "$.dist-tags.latest"
+    },
+    "autoupdate": {
+        "installer": {
+            "script": [
+                "npm install --prefix \"$dir\" @jackwener/opencli@$version --omit=dev --no-audit --no-fund",
+                "$sync = @'",
+                "param([ValidateSet('install','uninstall')][string]$Mode = 'install')",
+                "$ErrorActionPreference = 'Stop'",
+                "$stage = Join-Path (Join-Path $env:USERPROFILE '.opencli') 'skills'",
+                "$src = Join-Path (Join-Path (Join-Path (Join-Path $PSScriptRoot 'node_modules') '@jackwener') 'opencli') 'skills'",
+                "$bases = @('.claude', '.agents') | ForEach-Object { Join-Path $env:USERPROFILE $_ }",
+                "if ($Mode -eq 'install') {",
+                "    if (!(Test-Path $src)) { throw \"Missing bundled skills: $src\" }",
+                "    New-Item -ItemType Directory -Force -Path $stage | Out-Null",
+                "    Get-ChildItem $stage -Directory -Filter 'opencli-*' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force",
+                "    Copy-Item (Join-Path $src '*') $stage -Recurse -Force",
+                "    Write-Host \"opencli skills: $stage\"",
+                "    foreach ($base in $bases) {",
+                "        if (!(Test-Path $base)) { continue }",
+                "        $target = Join-Path $base 'skills'",
+                "        New-Item -ItemType Directory -Force -Path $target | Out-Null",
+                "        Get-ChildItem $stage -Directory -Filter 'opencli-*' | ForEach-Object {",
+                "            Copy-Item $_.FullName (Join-Path $target $_.Name) -Recurse -Force",
+                "        }",
+                "        Write-Host \"opencli skills: $target\"",
+                "    }",
+                "} else {",
+                "    foreach ($base in $bases) {",
+                "        $target = Join-Path $base 'skills'",
+                "        if (Test-Path $target) {",
+                "            Get-ChildItem $target -Directory -Filter 'opencli-*' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force",
+                "            Write-Host \"removed opencli skills from: $target\"",
+                "        }",
+                "    }",
+                "    $config = Join-Path $env:USERPROFILE '.opencli'",
+            "    if (Test-Path $config) { Remove-Item $config -Recurse -Force; Write-Host \"removed: $config\" }",
+                "}",
+                "'@",
+                "Set-Content -Path (Join-Path $dir 'sync-skills.ps1') -Value $sync -Encoding UTF8",
+                "& (Join-Path $dir 'sync-skills.ps1') -Mode install"
+            ]
+        }
+    }
+}
